@@ -1,0 +1,15 @@
+- name: Demostrar modulos k8s
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  vars:
+    namespace: rgb1603-dev
+    
+   module_defauls:
+     group/k8s:
+       namespace: "{{ namespace }}"
+       api_key: ""
+       host: 
+       
+   tasks:
+     - name
